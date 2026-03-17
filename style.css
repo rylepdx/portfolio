@@ -1,17 +1,8 @@
+/* Global */
 body {
   padding-top: 56px;
-}
-
-.hero-section {
-  min-height: 100vh;
-  background-color: #222;
-}
-
-.section-padding {
-  padding: 80px 0;
-}
-body {
   font-family: "Inter", sans-serif;
+  color: #333;
 }
 
 h1,
@@ -21,6 +12,107 @@ h4,
 h5,
 h6 {
   font-family: "Merriweather", serif;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  margin-left: 8px;
+}
+
+.nav-link:hover {
+  color: #adb5bd !important;
+}
+
+/* Hero */
+.hero-section {
+  min-height: 100vh;
+  background-color: #222;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-greeting {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.hero-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+/* About */
+.profile-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 4px solid #dee2e6;
+}
+
+/* Accordion (Experience) */
+.accordion-button:not(.collapsed) {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: invert(1);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+/* CAROUSEL (Projects) */
+.carousel {
+  padding-bottom: 50px;
+}
+
+.carousel-item .card {
+  border: none;
+  border-radius: 12px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
 }
 
 .carousel-control-prev-icon,
@@ -33,4 +125,29 @@ h6 {
 
 .carousel-indicators [data-bs-target] {
   background-color: #222;
+}
+
+/* Footer */
+.footer {
+  font-size: 0.9rem;
+}
+
+.footer a:hover {
+  opacity: 0.7;
+}
+
+/* Responsive (layout adjust)*/
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    width: 160px;
+    height: 160px;
+  }
 }
