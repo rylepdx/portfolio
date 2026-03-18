@@ -56,3 +56,21 @@ function isValidEmail(email) {
   const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return pattern.test(email);
 }
+
+// Hero background slideshow
+
+const heroImages = ["img/IMG_5053.jpg", "img/IMG_5466.jpg", "img/IMG_7904.jpg"];
+
+let currentIndex = 0;
+const heroSection = document.getElementById("home");
+
+function changeBackground() {
+  heroSection.style.backgroundImage = `url('${heroImages[currentIndex]}')`;
+  currentIndex = (currentIndex + 1) % heroImages.length;
+}
+
+// Set first image immediately
+changeBackground();
+
+// Change every 5 seconds
+setInterval(changeBackground, 5000);

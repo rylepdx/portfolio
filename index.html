@@ -38,7 +38,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
           <!--  Name on the left -->
-          <a class="navbar-brand fw-bold" href="#about">Ryan Le</a>
+          <a class="navbar-brand fw-bold" href="#home">Ryan Le</a>
 
           <!-- Hamburger button -->
           <button
@@ -79,6 +79,7 @@
       <div class="container text-center text-white">
         <p class="hero-greeting">Hi, I'm</p>
         <h1 class="hero-name">Ryan Le</h1>
+        <p class="hero-subtitle">Welcome to my website portfolio!</p>
         <a href="#about" class="btn btn-outline-light btn-lg mt-3"
           >Learn More <i class="bi bi-arrow-down"></i
         ></a>
@@ -94,9 +95,9 @@
           <!-- Photo column -->
           <div class="col-md-4 text-center">
             <img
-              src="images/profile.jpg"
+              src="img/profile_pic.JPG"
               alt="Portrait of Ryan Le"
-              class="img-fluid rounded-circle profile-image"
+              class="img-fluid profile-image rounded-3"
             />
           </div>
 
@@ -425,7 +426,13 @@
                     program structure.
                   </p>
                   <div class="mt-4">
-                    <a href="#" class="btn btn-dark">GitHub</a>
+                    <a
+                      href="https://github.com/rylepdx/JoyOfCodingSummer2025/tree/main/apptbook-android"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn btn-dark"
+                      >GitHub</a
+                    >
                   </div>
                 </div>
               </div>
@@ -448,7 +455,12 @@
                     Tree implementation.
                   </p>
                   <div class="mt-4">
-                    <a href="#" class="btn btn-dark">GitHub</a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/rylepdx/social-media-analytics"
+                      class="btn btn-dark"
+                      >GitHub</a
+                    >
                   </div>
                 </div>
               </div>
@@ -575,6 +587,7 @@
             href="https://github.com/rylepdx"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub profile"
             class="text-white fs-5"
           >
             <i class="bi bi-github"></i>
@@ -583,11 +596,16 @@
             href="https://linkedin.com/in/ryan--le"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
             class="text-white fs-5"
           >
             <i class="bi bi-linkedin"></i>
           </a>
-          <a href="mailto:ryle@pdx.edu" class="text-white fs-5">
+          <a
+            href="mailto:ryle@pdx.edu"
+            class="text-white fs-5"
+            aria-label="Send email"
+          >
             <i class="bi bi-envelope-fill"></i>
           </a>
         </div>
@@ -600,7 +618,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <!-- Your JavaScript -->
+    <!-- JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
